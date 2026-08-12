@@ -247,8 +247,7 @@ ul,ol{ margin:0; padding:0; list-style:none; }
   line-height:.85; color:var(--paper-3); letter-spacing:-.04em;
 }
 .cat__desc{ color:var(--txt-mute); }
-.cat__art{ width:100%; height:auto; color:var(--ink); margin:.4rem 0 1.4rem; }
-.cat--b1 .cat__art{ color:#8A6200; }
+.cat__art{ display:block; width:100%; height:auto; margin:.6rem 0 1.6rem; mix-blend-mode:multiply; }
 .cat__list{ display:grid; gap:.65rem; margin-bottom:1.8rem; }
 .cat__list li{ display:flex; gap:.65rem; align-items:baseline; font-size:.97rem; }
 .cat__list li::before{ content:''; width:6px; height:6px; border-radius:50%; background:var(--accent); flex:none; transform:translateY(-2px); }
