@@ -354,6 +354,7 @@ ul,ol{ margin:0; padding:0; list-style:none; }
 .plan ul{ display:grid; gap:.6rem; margin-bottom:1.9rem; font-size:.95rem; }
 .plan li{ display:flex; gap:.6rem; align-items:baseline; }
 .plan li::before{ content:''; width:6px; height:6px; border-radius:50%; background:var(--accent); flex:none; transform:translateY(-2px); }
+.plan li b{ white-space:nowrap; }
 .plan--hot li::before{ background:var(--yellow); }
 .plan .btn{ margin-top:auto; }
 
