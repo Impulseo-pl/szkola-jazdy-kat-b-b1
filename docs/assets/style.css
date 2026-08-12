@@ -254,7 +254,8 @@ ul,ol{ margin:0; padding:0; list-style:none; }
 .cat__list li::before{ content:''; width:6px; height:6px; border-radius:50%; background:var(--accent); flex:none; transform:translateY(-2px); }
 .cat--b1 .cat__list li::before{ background:var(--yellow); }
 .cat__list b{ font-family:var(--font-h); }
-.cat__foot{ margin-top:auto; display:flex; align-items:center; justify-content:space-between; gap:1rem; flex-wrap:wrap; padding-top:1.4rem; border-top:1px solid var(--line); }
+.cat__foot{ margin-top:auto; padding-top:1.4rem; border-top:1px solid var(--line); }
+.cat__foot .btn{ width:100%; }
 .cat__price{ margin:0; font-size:.85rem; color:var(--txt-mute); }
 .cat__price strong{ display:block; font-family:var(--font-h); font-size:1.85rem; color:var(--ink); line-height:1.1; }
 .cat__price span{ font-size:.78rem; }
@@ -327,42 +328,6 @@ ul,ol{ margin:0; padding:0; list-style:none; }
 .photo-slot--map{ min-height:200px; margin-top:2rem; border-color:rgba(255,255,255,.2); color:rgba(255,255,255,.5);
   background:linear-gradient(135deg, rgba(255,255,255,.04) 25%, transparent 25%, transparent 50%, rgba(255,255,255,.04) 50%, rgba(255,255,255,.04) 75%, transparent 75%);
   background-size:18px 18px; }
-
-/* ---------- CENNIK ---------- */
-.plans{ display:grid; grid-template-columns:repeat(3,1fr); gap:clamp(1rem, .6rem + 1.4vw, 1.8rem); align-items:start; }
-.plan{
-  position:relative; display:flex; flex-direction:column;
-  border:1px solid var(--line); border-radius:var(--r-lg); background:var(--paper);
-  padding:clamp(1.5rem, 1.1rem + 1.2vw, 2.2rem);
-}
-.plan--hot{
-  border-color:transparent; background:var(--ink); color:rgba(255,255,255,.72);
-  box-shadow:var(--sh-lg); transform:translateY(-10px);
-}
-.plan--hot h3{ color:#fff; }
-.plan__flag{
-  position:absolute; top:-13px; left:50%; transform:translateX(-50%);
-  background:var(--accent); color:#fff; font-size:.72rem; font-weight:700;
-  letter-spacing:.1em; text-transform:uppercase; padding:.4rem .95rem; border-radius:999px; white-space:nowrap;
-}
-.plan__price{ font-family:var(--font-h); font-weight:800; font-size:1.15rem; color:var(--txt-mute); margin:.4rem 0 .2rem; }
-.plan__price span{ font-size:2.5rem; color:var(--ink); letter-spacing:-.03em; }
-.plan--hot .plan__price{ color:rgba(255,255,255,.6); }
-.plan--hot .plan__price span{ color:#fff; }
-.plan__note{ font-size:.88rem; color:var(--txt-mute); margin-bottom:1.4rem; padding-bottom:1.4rem; border-bottom:1px solid var(--line); }
-.plan--hot .plan__note{ color:rgba(255,255,255,.55); border-color:var(--line-2); }
-.plan ul{ display:grid; gap:.6rem; margin-bottom:1.9rem; font-size:.95rem; }
-.plan li{ display:flex; gap:.6rem; align-items:baseline; }
-.plan li::before{ content:''; width:6px; height:6px; border-radius:50%; background:var(--accent); flex:none; transform:translateY(-2px); }
-.plan--hot li::before{ background:var(--yellow); }
-.plan .btn{ margin-top:auto; }
-
-.extras{ margin-top:clamp(2.4rem, 1.8rem + 2vw, 3.6rem); background:var(--paper-2); border-radius:var(--r-lg); padding:clamp(1.4rem, 1rem + 1.4vw, 2.2rem); }
-.extras h3{ margin-bottom:1rem; }
-.extras__tbl{ width:100%; border-collapse:collapse; font-size:.96rem; }
-.extras__tbl td{ padding:.85rem 0; border-bottom:1px solid var(--line); }
-.extras__tbl tr:last-child td{ border-bottom:0; }
-.extras__tbl td:last-child{ text-align:right; font-family:var(--font-h); font-weight:700; color:var(--ink); white-space:nowrap; padding-left:1rem; }
 
 /* ---------- ZESPÓŁ ---------- */
 .team{ display:grid; grid-template-columns:repeat(3,1fr); gap:clamp(1.2rem, .8rem + 1.4vw, 2rem); }
@@ -485,8 +450,6 @@ ul,ol{ margin:0; padding:0; list-style:none; }
   .hero__card{ max-width:460px; }
   .cats{ grid-template-columns:1fr; }
   .fleet,.contact{ grid-template-columns:1fr; }
-  .plans{ grid-template-columns:1fr; }
-  .plan--hot{ transform:none; }
   .quotes{ grid-template-columns:1fr; }
   .team{ grid-template-columns:1fr 1fr; }
 
