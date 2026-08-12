@@ -11,7 +11,7 @@
   ===========================================================================
   DEMO / ZARYS DLA KLIENTA — dane do podmiany po akceptacji:
   • nazwa szkoły: "KIERUNEK"        • miasto: Warszawa
-  • telefon, e-mail, adres, NIP     • dane OSK
+  • telefon, e-mail, adres, NIP     • ceny w cenniku
   • imiona instruktorów + zdjęcia   • opinie kursantów (Google)
   • liczby w sekcji statystyk       • godziny pracy biura
   Miejsca na zdjęcia oznaczone klasą .photo-slot
@@ -59,6 +59,7 @@
     <nav class="nav" id="nav" aria-label="Menu główne">
       <a href="#kategorie">Kategorie</a>
       <a href="#przebieg">Jak to wygląda</a>
+      <a href="#cennik">Cennik</a>
       <a href="#flota">Auta i plac</a>
       <a href="#instruktorzy">Instruktorzy</a>
       <a href="#faq">FAQ</a>
@@ -104,7 +105,7 @@
 
       <div class="hero__btns">
         <a class="btn btn--primary" href="#kontakt">Zapisz się na kurs<svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-        <a class="btn btn--ghost" href="#kategorie">Zobacz kursy</a>
+        <a class="btn btn--ghost" href="#cennik">Zobacz cennik</a>
       </div>
 
       <ul class="hero__ticks">
@@ -183,6 +184,7 @@
           <li>Jazdy po trasach egzaminacyjnych WORD</li>
         </ul>
         <div class="cat__foot">
+          <p class="cat__price">od <strong>0000 zł</strong><span>cena końcowa</span></p>
           <a class="btn btn--dark" href="#kontakt">Zapisz się</a>
         </div>
       </article>
@@ -210,6 +212,7 @@
           <li>Zniżka przy późniejszym kursie na kat. B</li>
         </ul>
         <div class="cat__foot">
+          <p class="cat__price">od <strong>0000 zł</strong><span>cena końcowa</span></p>
           <a class="btn btn--dark" href="#kontakt">Zapisz się</a>
         </div>
       </article>
@@ -302,7 +305,7 @@
       <article class="feat">
         <span class="feat__ico">06</span>
         <h3>Cena, która się nie zmienia</h3>
-        <p>Kwotę ustalamy raz, przy zapisie — i tyle płacisz do końca kursu. Materiały, egzamin wewnętrzny i badania są w pakiecie.</p>
+        <p>To, co podajemy w cenniku, płacisz do końca kursu. Materiały, egzamin wewnętrzny i badania — w pakiecie.</p>
       </article>
     </div>
   </div>
@@ -327,6 +330,72 @@
       <div class="photo-slot photo-slot--tall"><span>zdjęcie: auto szkoleniowe</span></div>
       <div class="photo-slot"><span>zdjęcie: plac manewrowy</span></div>
       <div class="photo-slot"><span>zdjęcie: wnętrze auta</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ CENNIK ══════════════ -->
+<section class="sec" id="cennik">
+  <div class="wrap">
+    <header class="sec__head">
+      <p class="kicker">Cennik</p>
+      <h2>Wszystko wliczone, bez gwiazdek</h2>
+      <p class="sec__sub">Ceny poglądowe — do ustalenia z klientem. Rozłożenie na raty 0% dostępne w każdym wariancie.</p>
+    </header>
+
+    <div class="plans">
+      <article class="plan">
+        <h3>Kat. B — standard</h3>
+        <p class="plan__price"><span>0000</span> zł</p>
+        <p class="plan__note">30 h teorii + 30 h praktyki</p>
+        <ul>
+          <li>Materiały i baza pytań online</li>
+          <li>Egzamin wewnętrzny</li>
+          <li>Badania lekarskie na miejscu</li>
+          <li>Zapis na egzamin w WORD</li>
+        </ul>
+        <a class="btn btn--outline" href="#kontakt">Wybieram</a>
+      </article>
+
+      <article class="plan plan--hot">
+        <span class="plan__flag">Najczęściej wybierany</span>
+        <h3>Kat. B — komfort</h3>
+        <p class="plan__price"><span>0000</span> zł</p>
+        <p class="plan__note">30 h teorii + 40 h praktyki</p>
+        <ul>
+          <li>Wszystko ze standardu</li>
+          <li><b>+10 h</b> jazd po trasach egzaminacyjnych</li>
+          <li>Jazda rozgrzewająca przed egzaminem</li>
+          <li>Odbiór z domu na terenie miasta</li>
+          <li>Priorytet przy ustalaniu terminów</li>
+        </ul>
+        <a class="btn btn--primary" href="#kontakt">Wybieram</a>
+      </article>
+
+      <article class="plan">
+        <h3>Kat. B1</h3>
+        <p class="plan__price"><span>0000</span> zł</p>
+        <p class="plan__note">20 h teorii + 30 h praktyki</p>
+        <ul>
+          <li>Kurs od 16. roku życia</li>
+          <li>Pojazd z automatyczną skrzynią</li>
+          <li>Egzamin wewnętrzny</li>
+          <li>Zniżka na późniejszy kurs kat. B</li>
+        </ul>
+        <a class="btn btn--outline" href="#kontakt">Wybieram</a>
+      </article>
+    </div>
+
+    <div class="extras">
+      <h3>Usługi dodatkowe</h3>
+      <table class="extras__tbl">
+        <tbody>
+          <tr><td>Jazda doszkalająca (60 min)</td><td>000 zł</td></tr>
+          <tr><td>Jazda autem egzaminacyjnym przed egzaminem</td><td>000 zł</td></tr>
+          <tr><td>Kurs dla osób z lękiem przed jazdą (pakiet 5 h)</td><td>000 zł</td></tr>
+          <tr><td>Jazdy po odbiór prawa jazdy z zagranicy / odświeżenie umiejętności</td><td>000 zł / h</td></tr>
+        </tbody>
+      </table>
     </div>
   </div>
 </section>
@@ -527,12 +596,13 @@
       <p>Kursy</p>
       <a href="#kategorie">Prawo jazdy kat. B</a>
       <a href="#kategorie">Prawo jazdy kat. B1</a>
-      <a href="#kontakt">Jazdy doszkalające</a>
+      <a href="#cennik">Jazdy doszkalające</a>
       <a href="#flota">Auta i plac manewrowy</a>
     </nav>
 
     <nav class="ftr__nav" aria-label="Informacje">
       <p>Informacje</p>
+      <a href="#cennik">Cennik</a>
       <a href="#przebieg">Jak wygląda kurs</a>
       <a href="#faq">Najczęstsze pytania</a>
       <a href="#kontakt">Kontakt</a>
